@@ -1,0 +1,78 @@
+/* src/App.css */
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  max-width: 40%;
+  max-height: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+@media (max-width: 420px) {
+  .grid {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.card img {
+  max-width: fit-content;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.bottom-loading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #333;
+}
